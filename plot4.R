@@ -21,7 +21,7 @@ with(cutData, {
 	plot(dateTime,cutData$Sub_metering_1,type="l",ylab="Energy sub metering",xlab="")
 	lines(dateTime,Sub_metering_2,col="red")
 	lines(dateTime,Sub_metering_3,col="blue")
-	legend("topright",lty=1,legend=c("Sub_metering_1","Sub_Metering_2","Sub_Metering_3"),col=c("black","red","blue"))
+	legend("topright",lty=1,legend=c("Sub_metering_1","Sub_Metering_2","Sub_Metering_3"),col=c("black","red","blue"),bty= "n")
 	plot(dateTime,cutData$Voltage,type="l",xlab="datetime",ylab="Voltage")
 	plot(dateTime,cutData$Global_reactive_power,type="l",xlab="datetime",ylab="Global_reactive_power")
 	
